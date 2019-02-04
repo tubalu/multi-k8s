@@ -10,11 +10,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - k8s-multi.com
-        - www.k8s-multi.com
+        - qingcai.com
+        - www.qingcai.com
       secretName: k8s-multi-com
   rules:
-    - host: k8s-multi.com
+    - host: qingcai.com
       http:
         paths:
           - path: /
@@ -25,7 +25,7 @@ spec:
             backend:
               serviceName: server-cluster-ip-service
               servicePort: 5000
-    - host: www.k8s-multi.com
+    - host: www.qingcai.com
       http:
         paths:
           - path: /
@@ -36,3 +36,4 @@ spec:
             backend:
               serviceName: server-cluster-ip-service
               servicePort: 5000
+
