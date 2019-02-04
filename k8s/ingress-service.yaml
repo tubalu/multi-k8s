@@ -12,7 +12,7 @@ spec:
     - hosts:
         - qingcai.com
         - www.qingcai.com
-      secretName: k8s-multi-com
+      secretName: k8s-qingcai
   rules:
     - host: qingcai.com
       http:
