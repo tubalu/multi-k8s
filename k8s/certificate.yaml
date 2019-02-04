@@ -1,20 +1,20 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: k8s-multi-com-tls
+  name: k8s-qingcai-tls
 spec:
-  secretName: k8s-multi-com
+  secretName: k8s-qingcai
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: k8s-multi.com
+  commonName: qingcai.com
   dnsNames:
-    - k8s-multi.com
-    - www.k8s-multi.com
+    - qingcai.com
+    - www.qingcai.com
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - k8s-multi.com
-          - www.k8s-multi.com
+          - qingcai.com
+          - www.qingcai.com
